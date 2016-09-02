@@ -15,6 +15,9 @@
 		04F5D57C1D79342000AD8DEB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04F5D57A1D79342000AD8DEB /* LaunchScreen.storyboard */; };
 		04F5D5871D79342000AD8DEB /* XZYBluetoothTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 04F5D5861D79342000AD8DEB /* XZYBluetoothTests.m */; };
 		04F5D5921D79342000AD8DEB /* XZYBluetoothUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 04F5D5911D79342000AD8DEB /* XZYBluetoothUITests.m */; };
+		04F5D5A01D7934B000AD8DEB /* CoreBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04F5D59F1D7934B000AD8DEB /* CoreBluetooth.framework */; };
+		04F5D5A31D7935DA00AD8DEB /* BTLECentralViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04F5D5A21D7935DA00AD8DEB /* BTLECentralViewController.m */; };
+		04F5D5A61D79360800AD8DEB /* BTLEPeripheralViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04F5D5A51D79360800AD8DEB /* BTLEPeripheralViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +54,12 @@
 		04F5D58D1D79342000AD8DEB /* XZYBluetoothUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = XZYBluetoothUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		04F5D5911D79342000AD8DEB /* XZYBluetoothUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XZYBluetoothUITests.m; sourceTree = "<group>"; };
 		04F5D5931D79342000AD8DEB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		04F5D59F1D7934B000AD8DEB /* CoreBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreBluetooth.framework; path = System/Library/Frameworks/CoreBluetooth.framework; sourceTree = SDKROOT; };
+		04F5D5A11D7935DA00AD8DEB /* BTLECentralViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BTLECentralViewController.h; sourceTree = "<group>"; };
+		04F5D5A21D7935DA00AD8DEB /* BTLECentralViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BTLECentralViewController.m; sourceTree = "<group>"; };
+		04F5D5A41D79360800AD8DEB /* BTLEPeripheralViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BTLEPeripheralViewController.h; sourceTree = "<group>"; };
+		04F5D5A51D79360800AD8DEB /* BTLEPeripheralViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BTLEPeripheralViewController.m; sourceTree = "<group>"; };
+		04F5D5A71D794F7100AD8DEB /* PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +67,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				04F5D5A01D7934B000AD8DEB /* CoreBluetooth.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,6 +91,7 @@
 		04F5D5601D79342000AD8DEB = {
 			isa = PBXGroup;
 			children = (
+				04F5D59F1D7934B000AD8DEB /* CoreBluetooth.framework */,
 				04F5D56B1D79342000AD8DEB /* XZYBluetooth */,
 				04F5D5851D79342000AD8DEB /* XZYBluetoothTests */,
 				04F5D5901D79342000AD8DEB /* XZYBluetoothUITests */,
@@ -105,6 +116,10 @@
 				04F5D5701D79342000AD8DEB /* AppDelegate.m */,
 				04F5D5721D79342000AD8DEB /* ViewController.h */,
 				04F5D5731D79342000AD8DEB /* ViewController.m */,
+				04F5D5A11D7935DA00AD8DEB /* BTLECentralViewController.h */,
+				04F5D5A21D7935DA00AD8DEB /* BTLECentralViewController.m */,
+				04F5D5A41D79360800AD8DEB /* BTLEPeripheralViewController.h */,
+				04F5D5A51D79360800AD8DEB /* BTLEPeripheralViewController.m */,
 				04F5D5751D79342000AD8DEB /* Main.storyboard */,
 				04F5D5781D79342000AD8DEB /* Assets.xcassets */,
 				04F5D57A1D79342000AD8DEB /* LaunchScreen.storyboard */,
@@ -118,6 +133,7 @@
 			isa = PBXGroup;
 			children = (
 				04F5D56D1D79342000AD8DEB /* main.m */,
+				04F5D5A71D794F7100AD8DEB /* PrefixHeader.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -271,6 +287,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				04F5D5741D79342000AD8DEB /* ViewController.m in Sources */,
+				04F5D5A61D79360800AD8DEB /* BTLEPeripheralViewController.m in Sources */,
+				04F5D5A31D7935DA00AD8DEB /* BTLECentralViewController.m in Sources */,
 				04F5D5711D79342000AD8DEB /* AppDelegate.m in Sources */,
 				04F5D56E1D79342000AD8DEB /* main.m in Sources */,
 			);
@@ -413,7 +431,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/XZYBluetooth/PrefixHeader.pch";
 				INFOPLIST_FILE = XZYBluetooth/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = XZY.XZYBluetooth;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -424,7 +444,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/XZYBluetooth/PrefixHeader.pch";
 				INFOPLIST_FILE = XZYBluetooth/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = XZY.XZYBluetooth;
 				PRODUCT_NAME = "$(TARGET_NAME)";
